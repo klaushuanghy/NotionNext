@@ -50,6 +50,11 @@ const Style = () => {
         margin: 0;
         padding: 0;
       }
+      .dark .dark\:bg-\[\#2A2A2A\] {
+        --tw-bg-opacity: 1;
+        background-color: rgb(00 00 00 / var(--tw-bg-opacity));
+      }
+
     `}</style>
   )
 }
