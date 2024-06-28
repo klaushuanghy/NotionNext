@@ -14,7 +14,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
   return (
     <article
       data-wow-delay='.2s'
-      className='wow fadeInUp w-full mb-0 cursor-pointer overflow-hidden shadow-movie dark:bg-hexo-black-gray'>
+      className='wow fadeInUp w-full mb-2 cursor-pointer overflow-hidden shadow-movie dark:bg-hexo-black-gray'>
       <Link href={post?.href} passHref legacyBehavior>
         {/* 固定高度 ，空白用图片拉升填充 */}
         <div className='group flex flex-col aspect-[16/9] justify-between relative'>
@@ -39,7 +39,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
             )}
           </div>
           {/* 阴影遮罩 */}
-          <h2 className='absolute bottom-10 px-6 transition-all duration-200 text-white text-2xl font-semibold break-words shadow-text z-20'>
+          <h2 className='absolute bottom-5 px-6 transition-all duration-200 text-white text-2xl font-semibold break-words shadow-text z-10'>
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post.pageIcon} />
             )}
