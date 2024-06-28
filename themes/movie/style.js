@@ -45,6 +45,11 @@ const Style = () => {
         height: auto !important;
         aspect-ratio: 2/1 !important;
       }
+
+      .notion-asset-wrapper{
+        margin: 0;
+        padding: 0;
+      }
     `}</style>
   )
 }
